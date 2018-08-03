@@ -19,7 +19,7 @@
         <title>Who's up?</title>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light" style="z-index: 1;">
+        <nav class="navbar navbar-light bg-light shadow-sm" style="z-index: 1;">
             <a class="navbar-brand" href="#">
                 <img src="/static/img/broom.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Who's up?
@@ -27,19 +27,13 @@
             <span class="navbar-text animated slideInRight" id="clock">00:00:00</span>
         </nav>
         <div class="container">
-            <div class="row justify-content-center" style="margin-top: 2em; margin-bottom: 2em;">
-                <article class="card animated zoomInDown">
-                    <div class="row">
-                        <div class="card">
-                          <div class="card-body" style="padding: 5em;">
-                            <div>
-                                {% block content %}
-                                {% endblock %}
-                            </div>
-                          </div>
-                        </div>
+            <div class="my-4 justify-content-center">
+                <div class="card animated slideInDown shadow">
+                      <div class="py-5 card-title">
+                            {% block content %}
+                            {% endblock %}
                       </div>
-                </article>
+                </div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

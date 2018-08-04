@@ -14,3 +14,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+   .clockAnimation {
+      animation-name: slideInRight;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+  }
+}
+
+@media (min-width: 769px) {
+   .clockAnimation {
+      animation-name: slideInDown;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+  }
+}
